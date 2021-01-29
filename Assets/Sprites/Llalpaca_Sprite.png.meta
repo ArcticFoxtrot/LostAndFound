@@ -1,0 +1,492 @@
+fileFormatVersion: 2
+guid: e0fcfe2943e7dbe4aa14c117c43fbae8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3291246828647955395
+    second: Llalpaca_Sprite_Body
+  - first:
+      213: -6534012639656063613
+    second: Llalpaca_Hair1
+  - first:
+      213: 1037785226158168991
+    second: Llalpaca_Hair2
+  - first:
+      213: 4470244462849757128
+    second: Llalpaca_Hair3
+  - first:
+      213: 5160423759148764322
+    second: Llalpaca_Hair4
+  - first:
+      213: 4593988381184645712
+    second: Llalpaca_Eye1
+  - first:
+      213: -6033912001902028417
+    second: Llalpaca_Eye2
+  - first:
+      213: 1893140648063218128
+    second: Llalpaca_Eye3
+  - first:
+      213: -2422503612418483209
+    second: Llalpaca_Eye4
+  - first:
+      213: 3496570464636677334
+    second: Llalpaca_Eye5
+  - first:
+      213: -5398900962717555526
+    second: Llalpaca_Ear1_L
+  - first:
+      213: -288103619740272315
+    second: Llalpaca_Ear1_L
+  - first:
+      213: 4916928052780418590
+    second: Llalpaca_Ear2
+  - first:
+      213: 3886317216222411407
+    second: Llalpaca_Ear3_R
+  - first:
+      213: 3926673223118528950
+    second: Llalpaca_Ear3_L
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Llalpaca_Sprite_Body
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 169
+        width: 344
+        height: 895
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34ce4672742352d0800000000000000
+      internalID: -3291246828647955395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Llalpaca_Hair1
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 944
+        width: 157
+        height: 103
+      alignment: 9
+      pivot: {x: 0.44296205, y: 0.22201568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d43677f168255a0800000000000000
+      internalID: -6534012639656063613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Llalpaca_Hair2
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 937
+        width: 161
+        height: 111
+      alignment: 9
+      pivot: {x: 0.45250025, y: 0.23852979}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b5e4e2a24f66e00800000000000000
+      internalID: 1037785226158168991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Llalpaca_Hair3
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 926
+        width: 186
+        height: 129
+      alignment: 9
+      pivot: {x: 0.45502463, y: 0.23273699}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf015397af790e30800000000000000
+      internalID: 4470244462849757128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Llalpaca_Hair4
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 838
+        width: 342
+        height: 208
+      alignment: 9
+      pivot: {x: 0.43710738, y: 0.3158989}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac4c8e51128d9740800000000000000
+      internalID: 5160423759148764322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Llalpaca_Eye1
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 690
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a58cab71021cf30800000000000000
+      internalID: 4593988381184645712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Llalpaca_Eye2
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 694
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79d9a8d00d334ca0800000000000000
+      internalID: -6033912001902028417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Llalpaca_Eye3
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 692
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d139ad9369c54a10800000000000000
+      internalID: 1893140648063218128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Llalpaca_Eye4
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 693
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb12baacc9816ed0800000000000000
+      internalID: -2422503612418483209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Llalpaca_Eye5
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 664
+        width: 176
+        height: 101
+      alignment: 9
+      pivot: {x: 0.7189893, y: 0.45420733}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dcaaccdf40568030800000000000000
+      internalID: 3496570464636677334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Llalpaca_Ear1_R
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 426
+        width: 60
+        height: 170
+      alignment: 9
+      pivot: {x: 0.61934054, y: 0.06676348}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab4a4b3dd204315b0800000000000000
+      internalID: -5398900962717555526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Llalpaca_Ear1_L
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 484
+        width: 49
+        height: 105
+      alignment: 9
+      pivot: {x: 0.41649643, y: 0.110316396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54970e6c843700cf0800000000000000
+      internalID: -288103619740272315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Llalpaca_Ear2
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 456
+        width: 144
+        height: 113
+      alignment: 9
+      pivot: {x: 0.8835945, y: 0.9435668}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e16412453007c3440800000000000000
+      internalID: 4916928052780418590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Llalpaca_Ear3_R
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 468
+        width: 144
+        height: 52
+      alignment: 9
+      pivot: {x: 0.8978017, y: 0.9524442}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8afb65eae8fee530800000000000000
+      internalID: 3886317216222411407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Llalpaca_Ear3_L
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 520
+        width: 60
+        height: 40
+      alignment: 9
+      pivot: {x: 0.8068756, y: 0.21869811}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1a405fd785e7630800000000000000
+      internalID: 3926673223118528950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: dc7bf6d0d291b544d97cfba956c5538b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
