@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+
+    public bool isUsable = true;
+    [SerializeField] GameObject projectilePrefab;
+
+    public void SetIsUsable(bool t){
+        isUsable = t;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public bool GetIsUsable(){
+        return isUsable;
     }
+
+    public GameObject GetProjectilePrefab(){
+        return projectilePrefab;
+    }
+
 }
