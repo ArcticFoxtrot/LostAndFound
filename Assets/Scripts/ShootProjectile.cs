@@ -88,7 +88,7 @@ public class ShootProjectile : MonoBehaviour
             Vector3 direction = ray.direction;
             //get power from input?
             //instantiate projectile object
-            GameObject p = Instantiate(projectile.GetProjectilePrefab(), shootFromPoint.transform.position, Quaternion.identity, projectileParent);
+            GameObject p = Instantiate(projectile.GetProjectilePrefab(), shootFromPoint.transform.position, projectile.transform.rotation, projectileParent);
             p.SetActive(true);
             //add force to rigidbody
             Rigidbody projectileRB = p.GetComponent<Rigidbody>();
