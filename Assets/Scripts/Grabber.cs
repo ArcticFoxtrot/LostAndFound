@@ -6,11 +6,14 @@ using UnityEngine;
 public class Grabber : MonoBehaviour
 {
 
+    [SerializeField] float maxGrabDistance = 1f;
+
+
     private Projectile selectedProjectile;
 
     public Projectile GetCurrentProjectile(){
          RaycastHit hitInfo = new RaycastHit();
-            if(Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo)){
+            if(Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo, maxGrabDistance)){
                 selectedProjectile = hitInfo.collider.gameObject.GetComponent<Projectile>();
                 if(selectedProjectile == null){
                     return null;
