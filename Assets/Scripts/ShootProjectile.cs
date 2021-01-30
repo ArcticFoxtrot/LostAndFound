@@ -130,6 +130,7 @@ public class ShootProjectile : MonoBehaviour
         if(loadedProjectile){
             loadedProjectile = null;
             isShooterLoaded = false;
+            uIHandler.UpdateObjectImage(null);
         }
     }
 
