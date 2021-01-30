@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 392641530387595303}
   - component: {fileID: 4366252218703494929}
   - component: {fileID: 9078722856830659958}
+  - component: {fileID: 7360305592893665909}
   m_Layer: 0
   m_Name: CoffinBroken
   m_TagString: Untagged
@@ -76,6 +77,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectCategory: 4
   colourCategory: 7
+--- !u!54 &7360305592893665909
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628907259756071172}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
 --- !u!1001 &7326026735144419523
 PrefabInstance:
   m_ObjectHideFlags: 0

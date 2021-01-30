@@ -26,7 +26,15 @@ public class Projectile : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        SetIsUsable(true);
+        if(other.CompareTag("UsableCheck")){
+            SetIsUsable(true);
+        } else if(other.CompareTag("Shredder")){
+            if(!isUsable){
+                Debug.Log("Hit shredder " + other.name);
+                SetIsUsable(false);
+            }
+        }
+        FindObjectOfType<ObjectSpawner>().CheckObjectsInScene();
     }
 
 }

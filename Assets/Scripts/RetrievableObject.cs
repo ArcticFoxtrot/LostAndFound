@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum ObjectCategory {Car, Weapon, Halloween, SciFi, Graveyard, Cutlery, Anything, Christmas, Furniture};
+public enum ObjectCategory {Transport, Weapon, Halloween, SciFi, Graveyard, Cutlery, Anything, Christmas, Furniture};
 public enum ColourCategory {White, Black, Red, Green, Blue, Orange, Yellow, Brown, Purple, Grey};
 
 public class RetrievableObject : MonoBehaviour
