@@ -97,6 +97,7 @@ public class ShootProjectile : MonoBehaviour
             //get power from input?
             //instantiate projectile object
             GameObject p = Instantiate(projectile.GetProjectilePrefab(), shootFromPoint.transform.position, projectile.transform.rotation, projectileParent);
+            Destroy(projectile);
             p.SetActive(true);
             //add force to rigidbody
             Rigidbody projectileRB = p.GetComponent<Rigidbody>();
