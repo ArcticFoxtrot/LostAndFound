@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public delegate void ObjectsSpawnedHandler();
+
 public class ObjectSpawner : MonoBehaviour
 {
 
@@ -11,14 +13,18 @@ public class ObjectSpawner : MonoBehaviour
     [SerializeField] Transform bottomRightLimit;
     [SerializeField] Transform topRightLimit;
 
+    public event ObjectsSpawnedHandler ObjectsSpawned;
 
     // Start is called before the first frame update
-    void Start()
-    {
+    private void Awake(){
         //spawnPoint = RandomPoint(bottomLeftLimit.position, topLeftLimit.position);
         foreach(GameObject obj in spawnableObjects){
             Vector3 spawnPoint = GetRandomSpawnPoint();
             Instantiate(obj, spawnPoint, Quaternion.identity);
+        }
+        //raise event that objects are spawned
+        if(ObjectsSpawned != null){
+            ObjectsSpawned();
         }
         
     }
