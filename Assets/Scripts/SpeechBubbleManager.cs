@@ -12,7 +12,7 @@ public class SpeechBubbleManager : MonoBehaviour
     void Start()
     {
         myTransform = transform;
-        camera = GameObject.FindGameObjectWithTag("MainCamera");
+        camera = Camera.main.gameObject;
     }
 
     // Update is called once per frame
