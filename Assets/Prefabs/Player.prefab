@@ -9,8 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 451256095123621500}
-  - component: {fileID: 451256095123621501}
-  - component: {fileID: 451256095123621502}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -33,25 +31,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &451256095123621501
+--- !u!114 &1389131555
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451256095123621443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42eb7cda91488c2418d4914f70f12374, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &451256095123621502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451256095123621443}
+  m_GameObject: {fileID: 451256096003096270}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8969d232af7f65418472e692d77d688, type: 3}
@@ -60,8 +46,28 @@ MonoBehaviour:
   projectile: {fileID: 0}
   loadedProjectile: {fileID: 0}
   shootFromPoint: {fileID: 451256096187887245}
-  launchProjectilePower: 0
+  launchProjectilePower: 1000
+  powerIncreaseIncrement: 0.1
+  powerIncreaseIncrementTime: 0.1
   projectileParent: {fileID: 0}
+  UICanvas: {fileID: 0}
+--- !u!114 &1389131556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451256096003096270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42eb7cda91488c2418d4914f70f12374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxGrabDistance: 2
+  ignoreLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  invertMask: 1
 --- !u!1 &451256096187887244
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,6 +348,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: mouseLook.MinimumX
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: advancedSettings.shellOffset
       value: 0.1
       objectReference: {fileID: 0}
@@ -352,6 +362,11 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 11400006, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+--- !u!1 &451256096003096270 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100006, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+  m_PrefabInstance: {fileID: 451256096003192936}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &451256096002794218 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}

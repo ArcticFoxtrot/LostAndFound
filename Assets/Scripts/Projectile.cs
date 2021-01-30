@@ -20,4 +20,8 @@ public class Projectile : MonoBehaviour
         return projectilePrefab;
     }
 
+    private void OnTriggerEnter(Collider other) {
+        SetIsUsable(true);
+    }
+
 }
