@@ -20,6 +20,7 @@ public class ShootProjectile : MonoBehaviour
     [SerializeField] Transform projectileParent;
     [SerializeField] GameObject UICanvas;
 
+
     
         // Start is called before the first frame update
     void Start()
@@ -46,7 +47,14 @@ public class ShootProjectile : MonoBehaviour
         }
         
         if(Input.GetMouseButtonDown(1)){
-            projectile = GetProjectile();
+            if(projectile == null){
+                projectile = GetProjectile();
+            } else {
+                UnLoadShooter();
+                SetProjectileObjectActive(true);
+                projectile = GetProjectile();
+            }
+            
         }
 
         if(Input.GetKeyDown(KeyCode.E)){
@@ -109,6 +117,7 @@ public class ShootProjectile : MonoBehaviour
     }
 
     private void LoadShooter(){
+        uIHandler.UpdateObjectImage(projectile.GetPreviewSprite());
         loadedProjectile = projectile;
         if(loadedProjectile){
             SetProjectileObjectActive(false);
