@@ -93,6 +93,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectCategory: 1
   colourCategory: 6
+  objectName: uzi
 --- !u!1001 &8063071169011037304
 PrefabInstance:
   m_ObjectHideFlags: 0

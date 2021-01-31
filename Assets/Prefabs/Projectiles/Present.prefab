@@ -75,8 +75,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f6810739459c84e8b0bb95709a05e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectCategory: 7
+  objectCategory: 6
   colourCategory: 0
+  objectName: present
 --- !u!54 &-5558834639981585997
 Rigidbody:
   m_ObjectHideFlags: 0

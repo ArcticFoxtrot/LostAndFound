@@ -92,7 +92,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectCategory: 0
-  colourCategory: 0
+  colourCategory: 2
+  objectName: train
 --- !u!1001 &7518839721627173701
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -76,7 +76,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectCategory: 3
-  colourCategory: 0
+  colourCategory: 9
+  objectName: satellite dish
 --- !u!54 &5679537310357803780
 Rigidbody:
   m_ObjectHideFlags: 0

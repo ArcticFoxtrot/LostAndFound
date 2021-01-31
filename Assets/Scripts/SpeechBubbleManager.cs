@@ -7,8 +7,12 @@ using UnityEngine;
 public class SpeechBubbleManager : MonoBehaviour
 {
 
+    [SerializeField] TextMeshPro bubbleText;
+    [SerializeField] DialogueManager dialogueManager;
+
     GameObject camera;
     Transform myTransform;
+    private string acceptedValue;
 
     // Start is called before the first frame update
     void Start()
@@ -29,10 +33,17 @@ public class SpeechBubbleManager : MonoBehaviour
         myTransform.LookAt(camera.transform);
     }
 
-    public void UpdateText(string textInput) {
+    public void UpdateText() {
+        string textInput = dialogueManager.PickLine();
+        acceptedValue = dialogueManager.GetAcceptedValue();
         Debug.Log("UpdateText has been called!");
-        GameObject textBox = transform.Find("Speech Bubble/Speech Text").gameObject;
-        TextMeshPro tmp = textBox.GetComponent<TextMeshPro>();
-        tmp.SetText(textInput);
+        //GameObject textBox = transform.Find("Speech Bubble/Speech Text").gameObject;
+        //TextMeshPro tmp = textBox.GetComponent<TextMeshPro>();
+        bubbleText.text = textInput;
+        //tmp.SetText(textInput);
+    }
+
+    public string GetAcceptedValueFromSBM(){
+        return acceptedValue;
     }
 }

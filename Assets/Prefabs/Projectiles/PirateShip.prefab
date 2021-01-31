@@ -93,6 +93,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectCategory: 0
   colourCategory: 7
+  objectName: pirate ship
 --- !u!1001 &469998583570262127
 PrefabInstance:
   m_ObjectHideFlags: 0

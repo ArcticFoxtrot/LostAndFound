@@ -77,6 +77,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectCategory: 4
   colourCategory: 7
+  objectName: coffin
 --- !u!54 &-8641064833650031844
 Rigidbody:
   m_ObjectHideFlags: 0

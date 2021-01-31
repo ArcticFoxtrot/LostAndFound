@@ -75,8 +75,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f6810739459c84e8b0bb95709a05e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectCategory: 6
+  objectCategory: 7
   colourCategory: 7
+  objectName: fence
 --- !u!54 &2762878955135328774
 Rigidbody:
   m_ObjectHideFlags: 0

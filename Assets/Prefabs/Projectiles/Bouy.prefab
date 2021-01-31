@@ -92,8 +92,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f6810739459c84e8b0bb95709a05e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectCategory: 6
+  objectCategory: 10
   colourCategory: 2
+  objectName: buoy
 --- !u!1001 &6261482179633469848
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -13,12 +13,13 @@ public class LlamaSpawner : MonoBehaviour
     GameObject hair;
 
     public float movementSpeed = 0.1f;
+    public bool needsToWait = true;
     private float startTime;
     private float distance;
 
     public GameObject llama;
     public GameObject partsStorage;
-    public GameObject bubble;
+    public SpeechBubbleManager bubble;
     //Sprite positions
     public GameObject eyePosition;
     public GameObject earRPosition;
@@ -28,7 +29,7 @@ public class LlamaSpawner : MonoBehaviour
     private Boolean isMovable = false;
     private Boolean isReturning = false;
     private Boolean hasReachedEnd = false;
-    [SerializeField] Transform spawnPoint;
+    [SerializeField] public Transform spawnPoint;
     [SerializeField] Transform endPoint;
     [SerializeField] Transform dialogPoint;
 
@@ -36,10 +37,15 @@ public class LlamaSpawner : MonoBehaviour
     void Start()
     {
         
+        //check for parts
+        //if hars parts, move to partsstorage
+
 
         spawnPoint = transform.GetChild(0);
         endPoint = transform.GetChild(1);
         dialogPoint = transform.GetChild(2);
+
+
 
         //Find the different parts
         eye = GameObject.Find("Llalpaca_Eye1");
@@ -47,17 +53,24 @@ public class LlamaSpawner : MonoBehaviour
         rightEar = GameObject.Find("Llalpaca_Ear1_R");
         hair = GameObject.Find("Llalpaca_Hair1");
 
+        
+        
+
         //Find the alpaca and storage for faster reference
         llama = GameObject.FindWithTag("AlpacaBody");
         partsStorage = GameObject.FindWithTag("PartsStorage");
 
+        //eye.transform.parent = partsStorage.transform;
+        eye.transform.position = partsStorage.transform.position;
         //Find the positions for the parts
         eyePosition = GameObject.Find("EyePosition").gameObject;
         earRPosition = GameObject.Find("EarRPosition");
         earLPosition = GameObject.Find("EarLPosition");
         hairPosition = GameObject.Find("HairPosition");
 
-        bubble.SetActive(false);
+
+        bubble.gameObject.SetActive(false);
+        
         bubble.transform.position = dialogPoint.transform.position;
         distance = Vector3.Distance(spawnPoint.transform.position, endPoint.transform.position);
 
@@ -66,7 +79,12 @@ public class LlamaSpawner : MonoBehaviour
 
         LoadRandomParts();
 
-        StartCoroutine(Waiter());
+        if(needsToWait){
+            StartCoroutine(Waiter());
+        } else {
+            NoWaiter();
+        }
+        
 
     }
 
@@ -77,7 +95,7 @@ public class LlamaSpawner : MonoBehaviour
             llama.transform.position = Vector3.Lerp(spawnPoint.position, endPoint.position, fractionOfTravel);
         }
         if (Vector3.Distance(llama.transform.position, endPoint.transform.position) <= 0.1f) {
-            bubble.SetActive(true);
+            bubble.gameObject.SetActive(true);
         }
 
             if (isReturning) {
@@ -96,6 +114,14 @@ public class LlamaSpawner : MonoBehaviour
         startTime = Time.time;
     }
 
+    public void NoWaiter(){
+        if (isMovable) {
+            isMovable = false;
+        }
+        isMovable = true;
+        startTime = Time.time;
+    }
+
 
 
     /*Loads random parts for the Alpaca by first moving the part away into PartsStorage,
@@ -103,6 +129,7 @@ public class LlamaSpawner : MonoBehaviour
      */
     public void LoadRandomParts() {
         //Move the old ear away
+        bubble.UpdateText();
         if (leftEar) {
             leftEar.transform.position = partsStorage.transform.position;
         }
