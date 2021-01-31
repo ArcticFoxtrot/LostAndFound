@@ -79,7 +79,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUsable: 1
   projectilePrefab: {fileID: 6598570435605022565}
-  previewSprite: {fileID: 0}
+  previewSprite: {fileID: 21300000, guid: 842d0113daccf3e44ae95711fcd24a74, type: 3}
 --- !u!114 &8897377170638633019
 MonoBehaviour:
   m_ObjectHideFlags: 0

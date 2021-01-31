@@ -46,8 +46,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.014504224, y: 0.07313782, z: 0.106965065}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.014504224, y: 0.36832798, z: 0.6291671}
+  m_Center: {x: 0, y: -0.0037686154, z: 0.021756053}
 --- !u!114 &7034422604104379069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,7 +62,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUsable: 1
   projectilePrefab: {fileID: 7034422604104379071}
-  previewSprite: {fileID: 0}
+  previewSprite: {fileID: 21300000, guid: 29b4b24dddcdcde43a70549ff6101e69, type: 3}
 --- !u!114 &7034422604104379068
 MonoBehaviour:
   m_ObjectHideFlags: 0

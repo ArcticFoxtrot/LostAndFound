@@ -141,7 +141,7 @@ public class DialogueManager : MonoBehaviour
         GetObjectsInScene();
         possibleNames.Clear();
         foreach(GameObject obj in objectsInScene){
-            string name = obj.name;
+            string name = obj.GetComponent<RetrievableObject>().objectName;
             possibleNames.Add(name);
         }
     }
