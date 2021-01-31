@@ -1,0 +1,24 @@
+//alkuosia
+"I lost my "
+"Have you seen my "
+"Yo! I think I dropped my "
+"Hello there! Someone stole my "
+"Help me! I have a party coming up and I need a "
+
+//loppuosia
+". Halp!"
+". Toss it here!"
+". Do me a solid!"
+". I need it!"
+". Throw, I'll catch!"
+
+//random
+"Helloo! I think I lost something...uhhh..." (+väri)
+"You have a..." (+kategoria)
+
+//parilliset setit
+"Uhh...There wouldn't happen to be a " " there, would there?"
+
+"Help! My grandson is trying to kill me! I need something " " quickly!"
+"Uhhh. Grandma isn't looking too well. Can you toss me a coffin?"
+
